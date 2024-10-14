@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Ninjas - Registration</title>
+</head>
+<body>
+
+    <!-- header registration -->
+    <header>
+        <img src="../Multimedia/new_cn_logo.svg" alt="coding Ninjas logo">
+        <h2>Create an Account</h2>
+    </header>
+
+    <!-- main registration form -->
+    <main>
+        <!-- action check later if required add it ******************************************************-->
+        <form action="" method="get" target="_self" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <br>
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name" required autocomplete="name">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required autocomplete="email">
+                <br><br>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="6" maxlength="8">
+                <br><br>
+                <!-- select -->
+                <label for="usertype">User Type:</label>
+                <select name="usertype" id="usertype" required>
+                    <option value="" disabled selected hidden>Select user type</option>
+                    <option value="student">Student</option>
+                    <option value="fresher">Fresher</option>
+                    <option value="experienced">Experienced</option>
+                    <option value="adminuser">Admin User</option>                   
+                </select>
+                <br><br>
+                <!-- select -->
+                <label for="course">Select Course:</label>
+                <select name="course" id="course" required>
+                    <option selected value="web_development">Course 1 - Web Development</option>
+                    <option value="data_science">Course 2 - Data Science</option>
+                    <option value="digital_marketing">Course 3 - Digital Marketing Mastery</option>
+                    <option value="android_development">Course 4 - Android Development</option>                   
+                </select>
+                <br><br>
+                <button type="submit" name="register" value="register">Register</button>
+
+            </fieldset>
+        </form>
+    </main>
+    
+</body>
+</html>
